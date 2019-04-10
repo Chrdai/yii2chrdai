@@ -8,6 +8,8 @@
 
 \Yii::setAlias('common', dirname(__DIR__) . '/common');
 
+\Yii::setAlias('core', dirname(__DIR__) . '/core');
+
 \Yii::setAlias('organize', dirname(__DIR__) . '/modules/organize');
 
 \Yii::setAlias('standard', dirname(__DIR__) . '/modules/standard');

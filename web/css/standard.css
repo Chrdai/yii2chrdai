@@ -1,0 +1,31 @@
+.headimg {
+    width: 92px;
+    height: 92px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.minFilebox {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    line-height: 28px;
+    overflow: hidden;
+    color: #fff;
+    background: #1e7fc6;
+}
+.minFilebox input[type='file'] {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    font-size: 60px;
+    width: 200%;
+}
+.headimg img{
+    width:100%;
+    height:100%;
+}

@@ -53,7 +53,23 @@ $config = [
             ],
         ],
 
+        'i18n' => [
+            'translations' => [
+                'standard*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'sourceLanguage' => 'zh-CN',
+                    'basePath' => '@standard/messages'
+                ],
+            ],
+        ],
     ],
+
+    'modules' => [
+        'standard' => [
+            'class' => 'app\modules\standard\Module',
+        ],
+    ],
+
     'params' => $params,
 ];
 
@@ -69,6 +85,7 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'allowedIPs' => ['*']
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
