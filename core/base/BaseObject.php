@@ -24,7 +24,7 @@ class BaseObject
      * ```
      * @param array $config 请使用 $key => $value 的形式
      */
-    public function __construct(array $config)
+    public function __construct(array $config = [])
     {
         foreach($config as $name => $value){
             if(property_exists($this, $name)){
